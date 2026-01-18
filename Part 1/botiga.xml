@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Etiqueta principal: els productes venuts a la tenda online-->
+<productes>
+    <!--Producte 1, amb el seu identificador corresponent-->
+    <producte id="P1">
+        <!--A dins de l'etiqueta "producte" tenim els camps principals de cadascun tenint en compte que els productes
+        d'aquest exemple són llibres (nom, autor, dades de publicació, descripció, preu, categoria o gènere,
+        disponibilitat i la imatge de la portada)-->
+        <nom>El Nombre del Viento</nom>
+        <autor>Patrick Rothfuss</autor>
+        <!--A dins de l'etiqueta "publicació", per arribar al tercer nivell de profunditat demanat, he afegit la data
+        de publicació i la editorial amb la qual es va portar a terme-->
+        <publicació>
+            <data>25/05/2009</data>
+            <editorial>Plaza y Janes</editorial>
+        </publicació>
+        <descripcio>Primer libro de la serie "Crónicas del Asesino de Reyes"</descripcio>
+        <preu>25,55</preu>
+        <categoria>Fantasia èpica</categoria>
+        <!--L'etiqueta de disponibilitat consisteix en un bullean per dir si es troba en estoc o no-->
+        <disponibilitat estat='esgotat'/>
+        <imatge>https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-IcCilUxSeig_nuISzFkp68ktxrfvFgdO-Inbos8ShpGtSt7sjDitJOefiL-M2ScUdJvnpMG4jQHqc1fpuTItfWti-2zA9oHHyBA-a2LrcDPQx3abkjd-UUV48p8UAFAL5RUQQibj2t0/s1600/NotW10_FinalFront-678x1024.jpg</imatge>
+    </producte>
+    <!--Quan emplenem les dades d'un altre producte ho fem tornant a obrir l'etiqueta de producte al mateix nivell que la d'abans-->
+    <producte id="P2">
+        <nom>La Vida Invisible de Addie LaRue</nom>
+        <autor>Victoria Schwab</autor>
+        <publicació>
+            <data>16/01/2024</data>
+            <editorial>Books4pocket</editorial>
+        </publicació>
+        <descripcio>Llibre autoconclusiu</descripcio>
+        <preu>12,25</preu>
+        <categoria>Fantasia urbana</categoria>
+        <!--A l'etiqueta de disponibilitat, en cas de que el llire estigui en estoc, s'ha de dir quantes unitats exactes queden en estoc-->
+        <disponibilitat estat='en estoc'>15</disponibilitat>
+        <imatge>https://www.aglutinaeditores.com/media/resources/public/aa/aa0c/aa0c4317a5ec4f6c909128af231f648b_1.jpg</imatge>
+    </producte>
+</productes>
